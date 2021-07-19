@@ -39,6 +39,7 @@ const Index = () => {
         <Head>
             <title>宠物列表</title>
         </Head>
+        <Link href='/'><a>回首页</a></Link>
         <ul>
             <li>
                 <input placeholder='请输入宠物名' onKeyUp={saveHandle} onChange={event => { setText(event.target.value) }} />
@@ -47,8 +48,7 @@ const Index = () => {
         <hr />
         <h1>以下：</h1>
         <ul>
-            {list.map((item:any) => <li key={item._id}>
-                <Link href='/'></Link>
+            {list.map((item: any) => <li key={item._id}>
                 {item.name}
                 <button style={{ marginLeft: 100 }} onClick={() => editOne(item._id)}>修改</button>
                 <button style={{ marginLeft: 100 }} onClick={() => delOne(item._id)}>删除</button>
