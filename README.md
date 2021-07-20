@@ -1,3 +1,3 @@
 ## This is a Next.js project 
 
-View at [`create-next-app`](https://next-test-01.vercel.app).
+View at [`next-test-01`](https://next-test-01.vercel.app).
