@@ -14,13 +14,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          天地四方为江湖，世人聪明反糊涂。名利场上风浪起，赢到头来却是输。
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
         <div className={styles.grid}>
           <Link href='/pets'><a className={styles.card}>宠物列表</a></Link>

@@ -5,6 +5,7 @@ import React, { useState, useEffect, KeyboardEvent } from "react";
 const Index = () => {
     const [list, setList] = useState([])
     const [text, setText] = useState('')
+    //const [state, dispatch] = useReducer(reducer, initialState, init)
     useEffect(() => {
         loadData()
     }, [])
@@ -46,7 +47,7 @@ const Index = () => {
             </li>
         </ul>
         <hr />
-        <h1>以下：</h1>
+        <text>以下：</text>
         <ul>
             {list.map((item: any) => <li key={item._id}>
                 {item.name}
